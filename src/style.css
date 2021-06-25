@@ -17,7 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     margin: 0;
     position: absolute;
@@ -37,8 +36,7 @@ section {
     text-align: center;
 }
 
-section h1,
-section h2 {
+section h1, section h2 {
     text-transform: lowercase;
 }
 
@@ -134,6 +132,7 @@ section h2 {
 }
 
 .showcase {
+    margin-top: 1em;
     font-size: 0.5em;
 }
 
@@ -145,7 +144,6 @@ section h2 {
 
 .light-bg {
     color: var(--accent);
-    
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 100%), var(--neutral-dark);
     /* linear-gradient(135deg, var(--accent), var(--accent-dark)); */
 }
@@ -179,8 +177,7 @@ ul {
 .projects li {
     padding: 1em;
     text-align: left;
-    width: 30em;
-    max-width: 100%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     list-style-type: none;
@@ -191,12 +188,17 @@ ul {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
-    gap: 2em;   
+    gap: 2em;
 }
 
 .flex img {
-    width: 10em;
+    border-radius: 40px;
+    width: 8em;
     max-width: 90%;
+}
+
+article {
+    width: 100%;
 }
 
 .btn-flex {
@@ -223,5 +225,9 @@ ul {
     .flex {
         flex-direction: row;
         justify-content: space-between;
+    }
+    .projects li {
+        width: 30em;
+        max-width: 100%;
     }
 }
