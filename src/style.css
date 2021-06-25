@@ -37,8 +37,22 @@ section {
     text-align: center;
 }
 
-section h1 {
+section h1,
+section h2 {
     text-transform: lowercase;
+}
+
+section h1 {
+    font-size: 1.5em;
+}
+
+section h2 {
+    font-size: 1.1em;
+}
+
+.light-bg p {
+    font-size: 0.7em;
+    color: black;
 }
 
 .hero {
@@ -181,7 +195,7 @@ ul {
 }
 
 .flex img {
-    width: 15em;
+    width: 10em;
     max-width: 90%;
 }
 
@@ -191,11 +205,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-}
-
-p {
-    font-size: 0.8em;
-    color: black;
 }
 
 @media (min-width: 45rem) and (prefers-reduced-motion: no-preference) {
