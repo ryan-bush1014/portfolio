@@ -31,7 +31,7 @@ body {
 }
 
 section {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.25rem, 3vw, 2rem);
     min-height: 100vh;
     padding: 1em;
     text-align: center;
@@ -72,21 +72,6 @@ section h1 {
     content: '.';
     position: absolute;
     margin-left: -0.25em;
-}
-
-@media (min-width: 45rem) and (prefers-reduced-motion: no-preference) {
-    .hero-title h1::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        width: 100%;
-        top: 85%;
-        background-color: var(--accent);
-        border-radius: 100vw;
-        height: 0.1em;
-        transform-origin: right;
-        animation: strike 500ms 1s forwards, period 500ms 1500ms forwards;
-    }
 }
 
 @keyframes strike {
@@ -172,6 +157,11 @@ section h1 {
     height: 100%;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .projects li {
     padding: 1em;
     text-align: left;
@@ -184,6 +174,19 @@ section h1 {
 
 .flex {
     display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    gap: 2em;   
+}
+
+.flex img {
+    width: 15em;
+    max-width: 90%;
+}
+
+.btn-flex {
+    display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -193,4 +196,23 @@ section h1 {
 p {
     font-size: 0.8em;
     color: black;
+}
+
+@media (min-width: 45rem) and (prefers-reduced-motion: no-preference) {
+    .hero-title h1::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 85%;
+        background-color: var(--accent);
+        border-radius: 100vw;
+        height: 0.1em;
+        transform-origin: right;
+        animation: strike 500ms 1s forwards, period 500ms 1500ms forwards;
+    }
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
