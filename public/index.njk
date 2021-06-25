@@ -21,14 +21,27 @@ layout: 'base.njk'
 <section class="light-bg">
     <h1>My Projects</h1>
     <ul role="list" class="projects">
-        {%- for project in collections.project | reverse -%}
+        <li>
+            <div class="flex">
+                <article class="snippet">
+                    <h3 class="snippet-title">Othello</h3>
+                    <p class="snippet-text">Play Othello against an AI opponent that was made with the MiniMax algorithm.</p>
+                    <div class="flex">
+                        <a href="{{ project.url }}" class="btn btn-alt showcase">Read more</a>
+                        <a href="{{ project.url }}" class="btn btn-alt showcase">Live Demo</a>
+                    </div>
+                </article>
+                <img src="image" alt="imageAlt">
+            </div>
+        </li>
+        {# {%- for project in collections.project | reverse -%}
             <li>
                 <article class="snippet">
                     <h3 class="snippet-title">{{ project.data.title }}</h3>
                     <a href="{{ project.url }}">testing</a>
                 </article>
             </li>
-        {%- endfor -%}
+        {%- endfor -%} #}
     </ul>
 </section>
 <script src="particles.min.js"></script>
