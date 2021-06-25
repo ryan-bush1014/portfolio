@@ -25,14 +25,14 @@ layout: 'base.njk'
             <li>
                 <div class="flex">
                     <article class="snippet">
-                        <h3 class="snippet-title">{{ title }}</h3>
-                        <p class="snippet-text">{{ snippetText }}</p>
+                        <h3 class="snippet-title">{{ project.data.title }}</h3>
+                        <p class="snippet-text">{{ project.data.snippetText }}</p>
                         <div class="flex">
                             <a href="{{ project.url }}" class="btn btn-alt showcase">Read more</a>
                             <a href="{{ project.data.gitUrl }}" class="btn btn-alt showcase">View in Github</a>
                         </div>
                     </article>
-                    <img src="{{ image }}" alt="{{ imageAlt }}">
+                    <img src="{{ thumbnail }}">
                 </div>
             </li>
         {%- endfor -%}
