@@ -1,7 +1,6 @@
 {
   "name": "portfolio-scratch",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
@@ -20,5 +19,6 @@
   "homepage": "https://github.com/ryan-bush1014/portfolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
-  }
+  },
+  "description": ""
 }
