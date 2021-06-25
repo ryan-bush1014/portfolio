@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Bush - Digital Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -15,26 +14,9 @@
 </head>
 
 <body>
-    <section class="hero">
-        <div id="particles-js"></div>
-        <div class="hero-title">
-            <h1>
-                My Name is Ryan Bush&nbsp;
-            </h1>
-            <h2>
-                HTML / CSS / JS / C
-            </h2>
-            <a href="#projects" class="btn">See My Work</a>
-        </div>
-    </section>
-    <section class="purple-bg" id="projects">
-        <h1>Who I am</h1>
-    </section>
-    <section class="light-bg">
-        <h1>My Projects</h1>
-    </section>
-    <script src="particles.min.js"></script>
-    <script src="main.js"></script>
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{ content | safe }}
 </body>
-
 </html>
