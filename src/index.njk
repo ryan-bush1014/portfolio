@@ -21,10 +21,11 @@ layout: 'base.njk'
 <section class="light-bg">
     <h1>My Projects</h1>
     <ul role="list" class="projects">
-        {%- for project in collections.project -%}
+        {%- for project in collections.project | reverse -%}
             <li>
                 <article class="snippet">
-                    <h3 class="snippet-title">{{ post.data.title }}</h3>
+                    <h3 class="snippet-title">{{ project.data.title }}</h3>
+                    <a href="{{ project.url }}">testing</a>
                 </article>
             </li>
         {%- endfor -%}

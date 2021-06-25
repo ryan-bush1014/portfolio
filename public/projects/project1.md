@@ -3,4 +3,4 @@ title: Othello
 tags: project
 ---
 
-testing
+Othello is a board game.
