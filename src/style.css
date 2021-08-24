@@ -191,8 +191,11 @@ ul {
     gap: 2em;
 }
 
+img {
+    border-radius: 2.5em;
+}
+
 .flex img {
-    border-radius: 40px;
     width: 8em;
     max-width: 90%;
 }
