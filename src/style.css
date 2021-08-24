@@ -193,11 +193,11 @@ ul {
 
 img {
     border-radius: 2.5em;
+    max-width: 90%;
 }
 
 .flex img {
     width: 8em;
-    max-width: 90%;
 }
 
 article {
