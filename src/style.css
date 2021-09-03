@@ -304,6 +304,10 @@ article {
     }
 }
 
+.thumbnail {
+    box-shadow: 0 0 0.5em -0.05em var(--accent);
+}
+
 /* TODO add hover media query */
 
 .card-content {
