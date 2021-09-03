@@ -321,6 +321,7 @@ article {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 25% 20%;
+    /* box-shadow: 0 0 1em 1em var(--accent-light); */
 }
 
 .legible-card h2 {
