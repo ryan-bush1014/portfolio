@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/projects"
+public_folder: "/projects"
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "src/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Tags", name: "tags", widget: "hidden", default: "project"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Snippet Text", name: "snippetText", widget: "markdown"}
+      - {label: "Github URL", name: "gitUrl", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

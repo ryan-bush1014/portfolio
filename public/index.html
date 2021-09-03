@@ -1,7 +1,21 @@
----
-title: Ryan Bush Digital Portfolio
-layout: 'base.njk'
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </head>
+    <body>
+        <title>Ryan Bush Digital Portfolio</title>
+    </body>
+</html></head><body>
 
 <section class="hero">
     <div id="particles-js"></div>
@@ -54,23 +68,19 @@ layout: 'base.njk'
 </section>
 <section class="light-bg" id="projects">
     <h1>My Projects</h1>
-    <ul role="list" class="projects">
-        {%- for project in collections.project | reverse -%}
-            <li>
-                <div class="flex">
-                    <article class="snippet">
-                        <h2 class="snippet-title">{{ project.data.title }}</h2>
-                        <p class="snippet-text">{{ project.data.snippetText }}</p>
-                        <div class="btn-flex">
-                            <a href="{{ project.url }}" class="btn btn-alt showcase">Read more</a>
-                            <a href="{{ project.data.gitUrl }}" class="btn btn-alt showcase">View in Github</a>
-                        </div>
-                    </article>
-                    <img src="{{ project.data.thumbnail }}">
-                </div>
-            </li>
-        {%- endfor -%}
-    </ul>
+    <ul role="list" class="projects"></ul>
 </section>
 <script src="particles.min.js"></script>
 <script src="main.js"></script>
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+</body></html>
