@@ -260,7 +260,7 @@ article {
     /* left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); */
-    margin-bottom: 5em;
+    margin-bottom: calc(1em + 150px);
     width: 100%;
 }
 
