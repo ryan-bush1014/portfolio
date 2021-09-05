@@ -13,30 +13,33 @@
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
         <!-- Primary Meta Tags -->
-        <title>{{ title }}</title>
-        <meta name="title" content="{{ title }}">
+        <title>Orbit Simulation</title>
+        <meta name="title" content="Orbit Simulation">
         <meta
         name="description"
-            content="{{ description }}"> <!-- Open Graph / Facebook -->
+            content=""> <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://ryanbush.tech/">
-        <meta property="og:title" content="{{ title }}">
+        <meta property="og:title" content="Orbit Simulation">
         <meta
             property="og:description"
-            content="{{ description }}">
+            content="">
         <meta
         property="og:image" content="img/preview.png"> <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://ryanbush.tech/">
-        <meta property="twitter:title" content="{{ title }}">
+        <meta property="twitter:title" content="Orbit Simulation">
         <meta
             property="twitter:description"
-            content="{{ description }}">
+            content="">
         <meta property="twitter:image" content="img/preview.png">
 
     </head>
     <body>
-        {{ content | safe }}
+        
+<img src=" https://ryan-bush1014.github.io/img/orbit.jpg ">
+<style>html{overflow-x: hidden}</style>
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://ryan-bush1014.github.io/demo/orbit/"></iframe>
         <script>
             if (window.netlifyIdentity) {
                 window.netlifyIdentity.on("init", user => {

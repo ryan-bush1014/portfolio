@@ -11,17 +11,37 @@
             rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+        <!-- Primary Meta Tags -->
+        <title>Ryan Bush Digital Portfolio</title>
+        <meta name="title" content="Ryan Bush Digital Portfolio">
+        <meta
+        name="description"
+            content="View my projects and learn about who I am--Live demonstrations and viewable source code are available"> <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ryanbush.tech/">
+        <meta property="og:title" content="Ryan Bush Digital Portfolio">
+        <meta
+            property="og:description"
+            content="View my projects and learn about who I am--Live demonstrations and viewable source code are available">
+        <meta
+        property="og:image" content="img/preview.png"> <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://ryanbush.tech/">
+        <meta property="twitter:title" content="Ryan Bush Digital Portfolio">
+        <meta
+            property="twitter:description"
+            content="View my projects and learn about who I am--Live demonstrations and viewable source code are available">
+        <meta property="twitter:image" content="img/preview.png">
+
     </head>
     <body>
-        <title>Ryan Bush Digital Portfolio</title>
-    </body>
-</html></head><body>
-
+        
 <section class="hero">
     <div id="particles-js"></div>
     <div class="hero-title">
         <h1>
-            My name is Ryan Bush&nbsp;
+            My Name is Ryan Bush&nbsp;
         </h1>
         <h2>
             HTML / CSS / JS / C
@@ -37,7 +57,7 @@
 </div>
 </section>
 <section class="purple-bg">
-    <h1>Who I am</h1>
+    <h1>About Me</h1>
     <div class="card-wrap">
         <div class="legible-card">
             <div class="card-image" style="background-image: url('img/cap2-compressed.jpg')"></div>
@@ -74,6 +94,18 @@
     <ul role="list" class="projects"><li>
                 <div class="flex">
                     <article class="snippet">
+                        <h2 class="snippet-title">Orbit Simulation</h2>
+                        <p class="snippet-text">A Newtonian physics simulation featuring multiple bodies interacting through gravity and collision.</p>
+                        <div class="btn-flex">
+                            <a href="/projects/2021-09-04-orbit-simulation/" class="btn btn-alt showcase">Live Demo</a>
+                            <a href="https://ryan-bush1014.github.io/" class="btn btn-alt showcase">View Source</a>
+                        </div>
+                    </article>
+                    <div class="thumbnail" style="background-image: url('https://ryan-bush1014.github.io/img/orbit.jpg');">
+                </div>
+            </li><li>
+                <div class="flex">
+                    <article class="snippet">
                         <h2 class="snippet-title">A* Pathfinding Demo</h2>
                         <p class="snippet-text">A pathfinding algorithm implemented over a tiled infinite plane with user-generated obstacles</p>
                         <div class="btn-flex">
@@ -99,15 +131,16 @@
 </section>
 <script src="particles.min.js"></script>
 <script src="main.js"></script>
-<script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
                 });
             }
-        });
-    }
-</script>
-</body></html>
+        </script>
+    </body>
+</html>
