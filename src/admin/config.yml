@@ -18,5 +18,5 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Demo available?", name: "demoAvailable", widget: "Boolean"}
-      
+      - {label: "Demo available?", name: "demoAvailable", widget: " oolean", default: true}
+
