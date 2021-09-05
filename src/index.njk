@@ -66,7 +66,13 @@ layout: 'base.njk'
                         <h2 class="snippet-title">{{ project.data.title }}</h2>
                         <p class="snippet-text">{{ project.data.snippetText }}</p>
                         <div class="btn-flex">
-                            <a href="{{ project.url }}" class="btn btn-alt showcase">Live Demo</a>
+                            <a href="{{ project.url }}" class="btn btn-alt showcase">
+                                {% if project.data.demoAvailable %}
+                                  Live Demo
+                                {% else %}
+                                  Read More
+                                {% endif %}
+                            </a>
                             <a href="{{ project.data.gitUrl }}" class="btn btn-alt showcase">View Source</a>
                         </div>
                     </article>
