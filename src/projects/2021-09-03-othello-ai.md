@@ -8,7 +8,5 @@ gitUrl: https://ryan-bush1014.github.io/demo/othello/
 date: 2021-09-03T18:20:40.294Z
 thumbnail: https://ryan-bush1014.github.io/img/othello.jpg
 demoAvailable: true
+demoURL: https://ryan-bush1014.github.io/demo/othello/
 ---
-<style>html{overflow-x: hidden}</style>
-
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://ryan-bush1014.github.io/demo/othello/"></iframe>
