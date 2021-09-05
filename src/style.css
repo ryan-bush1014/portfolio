@@ -365,3 +365,7 @@ article {
 .legible-card:hover .card-image {
     transform: scale(1.1);
 }
+
+.wave {
+    margin-top: -2px;
+}
