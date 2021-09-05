@@ -7,6 +7,7 @@ snippetText: A player agent for the game Othello (A.K.A. Reversi) which is
 gitUrl: https://ryan-bush1014.github.io/demo/othello/
 date: 2021-09-03T18:20:40.294Z
 thumbnail: https://ryan-bush1014.github.io/img/othello.jpg
+demoAvailable: true
 ---
 <style>html{overflow-x: hidden}</style>
 
