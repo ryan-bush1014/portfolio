@@ -23,8 +23,16 @@ img {
 
 article {
     font-family: Roboto;
-    text-indent: 4em;
     width: 90%;
     max-width: 50rem;
     margin: 0 auto;
+}
+
+article p {
+    text-indent: 4em;
+}
+
+article h1 {
+    font-size: 2em;
+    text-align: center;
 }
