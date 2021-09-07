@@ -41,5 +41,6 @@ article h1 {
 }
 
 article h2 {
+    color: var(--accent);
     font-size: 1.75em;
 }
