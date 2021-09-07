@@ -19,4 +19,6 @@ To render an object with raymarching, you must first obtain its mathematical rep
 
 The key is to use simple geometry in coordination, that is, calculate the SDF of the union of two or more shapes.
 
-![](/projects/3d-infinite.png "Infinite spheres rendered with domain repetition")
+![](/projects/blend.png "Two Spheres blended with a smooth min function")
+
+<!-- ![](/projects/3d-infinite.png "Infinite spheres rendered with domain repetition") -->
