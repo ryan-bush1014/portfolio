@@ -17,9 +17,14 @@ html {
 img {
     display: block;
     margin: 5em auto;
-    max-width: 100%;
-    min-width: 75%;
+}
+
+.thumbnail {
+    /* min-width: 75%; */
+    width: 60%;
+    max-width: 60rem;
     border-radius: 3vw;
+
 }
 
 article {
@@ -30,11 +35,18 @@ article {
 }
 
 article p {
-    text-indent: 4em;
+    text-indent: 4rem;
     font-size: 1.25em;
 }
 
 article h1 {
     font-size: 2.5em;
     text-align: center;
+    color: var(--accent);
+}
+
+article h2 {
+    text-indent: 4rem;
+    color: var(--accent);
+    font-size: 1.75em;
 }
