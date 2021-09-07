@@ -1,0 +1,29 @@
+:root {
+    --neutral-light: #dbdbdb;
+    --neutral-dark: #cfcfcf;
+    --accent-light: #533fd4;
+    --accent: #4428c0;
+    --accent-dark: #17001d;
+    /* --accent: #286fc0; */
+}
+
+html {
+    min-height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 100%), var(--neutral-dark);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+img {
+    display: block;
+    margin: 5em auto;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+article {
+    text-indent: 4em;
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
+}

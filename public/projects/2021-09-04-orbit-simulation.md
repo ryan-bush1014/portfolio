@@ -7,6 +7,8 @@ snippetText: A Newtonian physics simulation featuring multiple bodies
 gitUrl: https://ryan-bush1014.github.io/
 date: 2021-09-04T22:04:00.114Z
 thumbnail: https://ryan-bush1014.github.io/img/orbit.jpg
+demoAvailable: true
+demoURL: https://ryan-bush1014.github.io/demo/orbit/
 ---
 <style>html{overflow-x: hidden}</style>
 

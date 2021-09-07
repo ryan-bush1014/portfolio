@@ -301,6 +301,7 @@ article {
     border-radius: 2.5em;
     /* max-width: 90%; */
     background-size: cover;
+    background-position: center;
     width: 10em;
     flex: 1 0 auto;
     height:auto;
@@ -363,4 +364,8 @@ article {
 
 .legible-card:hover .card-image {
     transform: scale(1.1);
+}
+
+.wave {
+    bottom: -2px;
 }

@@ -1,12 +1,13 @@
 ---
 layout: 'base.njk'
+stylesheet: '../projectStyle.css'
 ---
 
-<style>html{overflow-x: hidden}</style>
-
 {% if demoAvailable %}
-    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; background: white" src="{{ demoURL }}"></iframe>
+    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; background: white;" src="{{ demoURL }}"></iframe>
 {% else %}
+    <article>
     <img src=" {{ thumbnail }} ">
-    {{ content | safe }}
+        {{ content | safe }}
+    </article>
 {% endif%}
