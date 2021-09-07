@@ -16,3 +16,5 @@ Raymarching--like raytracing, involves the casting of 'rays' outward from a came
 ## Signed Distance Fields
 
 To render an object with raymarching, you must first obtain its mathematical representation as a signed distance field (SDF)--essentially, you must be able to give the distance to the object from any arbitrary input coordinate. This is simple for basic spheres, prisms, lines, etc., but becomes complicated very quickly.
+
+![](/projects/3d-infinite.png "Infinite spheres rendered with domain repetition")
