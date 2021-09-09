@@ -10,7 +10,9 @@ thumbnail: /projects/blend.png
 demoAvailable: false
 ---
 
-<script type="text/javascript" src="https://unpkg.com/mathjax@3.2.0/es5/latest.js"></script>
+<script type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+</script>
 # C Language Raymarcher
 
 Raymarching—like raytracing, involves the casting of 'rays' outward from a camera. Where these two techniques differ, however, is how geometry is represented and how intersections are calculated.
