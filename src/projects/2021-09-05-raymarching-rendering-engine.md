@@ -10,8 +10,8 @@ thumbnail: /projects/blend.png
 demoAvailable: false
 ---
 
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js">
+<script type="text/javascript" id="MathJax-script" defer
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </script>
 # C Language Raymarcher
 
