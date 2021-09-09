@@ -3,14 +3,14 @@ tags: project
 layout: project
 title: Raymarching Rendering Engine
 snippetText: A 3D renderer capable of displaying any model represented by a
-  signed distance field
+  signed distance field.
 gitUrl: N/A
 date: 2021-09-05T18:58:16.663Z
 thumbnail: /projects/blend.png
 demoAvailable: false
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/latest.min.js"></script>
 # C Language Raymarcher
 
 Raymarching—like raytracing, involves the casting of 'rays' outward from a camera. Where these two techniques differ, however, is how geometry is represented and how intersections are calculated.
@@ -30,7 +30,7 @@ The difficulty of deriving the SDF for a shape sharply increases with its comple
 
 For most applications, it isn't good enough to know only which pixels contain geometry—it is also important to know how to appropriately shade said geometry. This involves finding which direction a surface is facing, otherwise known as the surface normal. Since the normal is the direction that points most directly away from the surface, this can also be interpreted as the direction of which the SDF increases at the fastest rate. In calculus, this is called the gradient, and it is defined by the vector having components equal to the partial derivatives of the SDF with respect to each axis.
 
-With the gradient in hand, it is possible to calculate diffuse shading. It is helpful--for reasons that will become apparent--to normalize both the gradient and the vector pointing from the light source to the surface. We can then calculate the negated dot product of these normalized vectors where \\(\vec{g}\\) is the gradient and \\(\vec{l}\\) is the light vector,
+With the gradient in hand, it is possible to calculate diffuse shading. It is helpful—for reasons that will become apparent—to normalize both the gradient and the vector pointing from the light source to the surface. We can then calculate the negated dot product of these normalized vectors where \\(\vec{g}\\) is the gradient and \\(\vec{l}\\) is the light vector,
 
 $$-(\vec{g} \cdot \vec{l}) = -|\vec{g}||\vec{l}|cos(\theta) = -cos(\theta),$$
 and \\(|\vec{g}||\vec{l}| = 1\\) because they are normalized. From here it is rather intuitive that the cosine of the angle between our vectors impacts the amount of diffuse light hitting the camera, as it is maximal when the vectors are in-line and reduced when the vectors are orthogonal or facing away from eachother. For this reason it becomes necessary to negate our result, as the surface should be brightest when the surface normal is pointing opposite to the light vector.
@@ -47,7 +47,7 @@ The advantages of directly simulating rays manifest in many different ways, almo
 
 
 ## Personal Conclusion
-This project was very daunting in the sense that it was complex mathematically as well as being difficult to design and program. I drew a lot of inspiration and learning from Inigo Quilez, who has written much more comprehensive articles on his [blog](https://www.iquilezles.org/index.html "Inigo's blog"). His videos are both informative and inspiring, and it is mostly because of his content that I decided to pursue this project.
+This project was very daunting in the sense that it was complex mathematically as well as being difficult to design and program. I drew a lot of inspiration and learning from Inigo Quilez, who has written much more comprehensive articles on his [blog](https://www.iquilezles.org/index.html "Inigo\'s blog"). His videos are both informative and inspiring, and it is mostly because of his content that I decided to pursue this project.
 
 The most rewarding part of any creation is when you find unique and awesome applications that were not personally considered previously. This moment for me was when I researched and found the SDF for a 3D fractal called the Mandelbulb, which I subsequently rendered (Figure 3).
 

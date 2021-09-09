@@ -47,7 +47,7 @@ The advantages of directly simulating rays manifest in many different ways, almo
 
 
 ## Personal Conclusion
-This project was very daunting in the sense that it was complex mathematically as well as being difficult to design and program. I drew a lot of inspiration and learning from Inigo Quilez, who has written much more comprehensive articles on his [blog](https://www.iquilezles.org/index.html "Inigo's blog"). His videos are both informative and inspiring, and it is mostly because of his content that I decided to pursue this project.
+This project was very daunting in the sense that it was complex mathematically as well as being difficult to design and program. I drew a lot of inspiration and learning from Inigo Quilez, who has written much more comprehensive articles on his [blog](https://www.iquilezles.org/index.html "Inigo\'s blog"). His videos are both informative and inspiring, and it is mostly because of his content that I decided to pursue this project.
 
 The most rewarding part of any creation is when you find unique and awesome applications that were not personally considered previously. This moment for me was when I researched and found the SDF for a 3D fractal called the Mandelbulb, which I subsequently rendered (Figure 3).
 

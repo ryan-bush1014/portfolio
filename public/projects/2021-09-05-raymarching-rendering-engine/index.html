@@ -40,7 +40,7 @@
 
     <article>
     
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/latest.min.js"></script>
 <h1>C Language Raymarcher</h1>
 <p>Raymarching—like raytracing, involves the casting of 'rays' outward from a camera. Where these two techniques differ, however, is how geometry is represented and how intersections are calculated.</p>
 <h2>Signed Distance Fields</h2>
@@ -51,7 +51,7 @@
 <i>Figure 1 - Two Spheres blended with a smooth min function</i></p>
 <h2>Shading and 3D Effects</h2>
 <p>For most applications, it isn't good enough to know only which pixels contain geometry—it is also important to know how to appropriately shade said geometry. This involves finding which direction a surface is facing, otherwise known as the surface normal. Since the normal is the direction that points most directly away from the surface, this can also be interpreted as the direction of which the SDF increases at the fastest rate. In calculus, this is called the gradient, and it is defined by the vector having components equal to the partial derivatives of the SDF with respect to each axis.</p>
-<p>With the gradient in hand, it is possible to calculate diffuse shading. It is helpful--for reasons that will become apparent--to normalize both the gradient and the vector pointing from the light source to the surface. We can then calculate the negated dot product of these normalized vectors where \(\vec{g}\) is the gradient and \(\vec{l}\) is the light vector,</p>
+<p>With the gradient in hand, it is possible to calculate diffuse shading. It is helpful—for reasons that will become apparent—to normalize both the gradient and the vector pointing from the light source to the surface. We can then calculate the negated dot product of these normalized vectors where \(\vec{g}\) is the gradient and \(\vec{l}\) is the light vector,</p>
 <p>$$-(\vec{g} \cdot \vec{l}) = -|\vec{g}||\vec{l}|cos(\theta) = -cos(\theta),$$
 and \(|\vec{g}||\vec{l}| = 1\) because they are normalized. From here it is rather intuitive that the cosine of the angle between our vectors impacts the amount of diffuse light hitting the camera, as it is maximal when the vectors are in-line and reduced when the vectors are orthogonal or facing away from eachother. For this reason it becomes necessary to negate our result, as the surface should be brightest when the surface normal is pointing opposite to the light vector.</p>
 <p>It is also necessary to clamp the output, so that no negative values are produced. For realism, one may also chose to add ambient lighting, so that our revised pixel brightness expression becomes</p>
