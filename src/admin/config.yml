@@ -18,7 +18,6 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Scripts", name: "scripts", widget: "file"}
       - {label: "Demo available?", name: "demoAvailable", widget: "boolean", default: true}
       - {label: "Demo URL", name: "demoURL", widget: "string", required: false}
 
