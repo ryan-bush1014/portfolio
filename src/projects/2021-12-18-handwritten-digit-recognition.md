@@ -10,9 +10,9 @@ thumbnail: /projects/digit_rec.png
 demoAvailable: true
 demoURL: https://ryan-bush1014.github.io/demo/digit_recognition_demo/
 ---
-<script src="mnist.js"></script>
-<script src="model_weights_browser.js"></script>
-<script src="browser_nn.js"></script>
+<script src="https://raw.githubusercontent.com/ryan-bush1014/ryan-bush1014.github.io/main/demo/digit_recognition_demo/mnist.js"></script>
+<script src="https://raw.githubusercontent.com/ryan-bush1014/ryan-bush1014.github.io/main/demo/digit_recognition_demo/model_weights_browser.js"></script>
+<script src="https://raw.githubusercontent.com/ryan-bush1014/ryan-bush1014.github.io/main/demo/digit_recognition_demo/browser_nn.js"></script>
 <style>
         html,
         body {
@@ -120,4 +120,4 @@ demoURL: https://ryan-bush1014.github.io/demo/digit_recognition_demo/
   <button onclick="draw_and_predict()">Next</button>
   <p id="pred"></p>
 </div>
-<script src="draw.js"></script>
+<script src="https://raw.githubusercontent.com/ryan-bush1014/ryan-bush1014.github.io/main/demo/digit_recognition_demo/draw.js"></script>
