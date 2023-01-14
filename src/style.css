@@ -360,6 +360,10 @@ article {
     /* mix-blend-mode: darken; */
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 
 
 .legible-card:hover .card-image {
