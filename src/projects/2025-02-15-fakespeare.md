@@ -8,5 +8,5 @@ gitUrl: N/A
 date: 2025-02-15T22:51:24.004Z
 thumbnail: /projects/073109a8-0f0d-40ac-9014-21416c16f0a4-.png
 demoAvailable: true
-demoURL: coruscating-souffle-f3be38.netlify.app
+demoURL: https://coruscating-souffle-f3be38.netlify.app
 ---
